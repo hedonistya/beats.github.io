@@ -85,10 +85,12 @@
             padding: 0;
         }
         &__container{
+            grid-template-columns: -webkit-max-content 250px;
             grid-template-columns: max-content 250px;
             justify-content: center;
             align-items: center;
-            column-gap: 2rem;
+            -moz-column-gap: 2rem;
+                 column-gap: 2rem;
         }   
     }
 
@@ -130,7 +132,8 @@
 
         &__list{
             flex-direction: row;
-            column-gap: 3.5rem;
+            -moz-column-gap: 3.5rem;
+                 column-gap: 3.5rem;
         }
         &__link{
             font-size: var(--normal-font-size);
@@ -162,7 +165,8 @@
 
     .case{
         &__container{
-            column-gap: 5rem;
+            -moz-column-gap: 5rem;
+                 column-gap: 5rem;
         }
         &__img{
             width: 300px;
@@ -174,9 +178,11 @@
 
     .discount{
         &__container{
+            grid-template-columns: 250px -webkit-max-content;
             grid-template-columns: 250px max-content;
             justify-content: center;
-            column-gap: 5rem;
+            -moz-column-gap: 5rem;
+                 column-gap: 5rem;
             padding: 3rem 0;
         }
         &__title{

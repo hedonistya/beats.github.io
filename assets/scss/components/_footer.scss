@@ -27,7 +27,8 @@
     }
     &__form{
         display: flex;
-        column-gap: .5rem;
+        -moz-column-gap: .5rem;
+             column-gap: .5rem;
         background-color: var(--container-color);
         padding: .5rem .75rem;
         border-radius: .5rem;
@@ -38,6 +39,30 @@
         width: 90%;
         color: var(--white-color);
 
+        &::-webkit-input-placeholder{
+            color: var(--text-color);
+            font-size: var(--normal-font-size);
+            font-family: var(--body-font);
+        }
+
+        &::-moz-placeholder{
+            color: var(--text-color);
+            font-size: var(--normal-font-size);
+            font-family: var(--body-font);
+        }
+
+        &:-ms-input-placeholder{
+            color: var(--text-color);
+            font-size: var(--normal-font-size);
+            font-family: var(--body-font);
+        }
+
+        &::-ms-input-placeholder{
+            color: var(--text-color);
+            font-size: var(--normal-font-size);
+            font-family: var(--body-font);
+        }
+
         &::placeholder{
             color: var(--text-color);
             font-size: var(--normal-font-size);
@@ -46,7 +71,8 @@
     }
     &__social{
         display: flex;
-        column-gap: 1.25rem;
+        -moz-column-gap: 1.25rem;
+             column-gap: 1.25rem;
 
         &-link{
             display: inline-flex;
